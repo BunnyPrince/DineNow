@@ -1,4 +1,4 @@
-# DineNow1
+# DineNow
 
 See Bellow a small demo of our app DineNow.
 The full app was created on the website https://appery.io/ 
