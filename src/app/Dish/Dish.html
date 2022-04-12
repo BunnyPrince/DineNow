@@ -1,0 +1,83 @@
+<ion-header _aio-CFCE5133 class="ion-no-border">
+    <ion-toolbar _aio-4922DC23 #j_53 color="primary">
+        <ion-buttons #j_54 slot="start" collapse="true">
+            <ion-back-button _aio-A9A1E4FC #j_55>
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title _aio-0E6C98B8 #j_56>
+            {{__getMapping(currentItem, 'j_56__text', 'Burger', false)}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-DC1D758C class="ion-padding">
+    <ion-img _aio-CAC0D17F #j_36 src="{{__getMapping(currentItem, 'j_36__imageSrc', 'assets/images/burger.jpg', false)}}"
+    alt="Image error" class="ion-margin-bottom">
+    </ion-img>
+    <ion-text _aio-FE94FB2C #j_37>
+        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_37__text')" [ngIfElse]="j_37__default_text">
+            {{__getMapping(currentItem, 'j_37__text', '', false)}}
+        </ng-template>
+        <ng-template #j_37__default_text>
+            Close-up of home made tasty burger on wooden table
+        </ng-template>
+    </ion-text>
+    <div _aio-57D8AFC4 #j_38 class="ion-margin-top ion-margin-bottom ion-text-right">
+        <ion-badge _aio-E923E94F #j_39 color="success">
+            <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_39__text')" [ngIfElse]="j_39__default_text">
+                {{__getMapping(currentItem, 'j_39__text', '', false)}}
+            </ng-template>
+            <ng-template #j_39__default_text>
+                $45.00
+            </ng-template>
+        </ion-badge>
+    </div>
+    <ion-note _aio-C2B56CC9 #j_40>
+        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_40__text')" [ngIfElse]="j_40__default_text">
+            {{__getMapping(currentItem, 'j_40__text', '', false)}}
+        </ng-template>
+        <ng-template #j_40__default_text>
+            House-made 80/20 blend ground beef &amp; local goetta, house-made bacon jam, arugula,
+            green olive-garlic aioli, heirloom tomato, fried egg, Sixteen Bricks bun
+        </ng-template>
+    </ion-note>
+    <ion-grid _aio-75DA71C7 #j_41 class="ion-margin-top" fixed="true">
+        <ion-row _aio-518E9A6F #j_42>
+            <ion-col _aio-C357C8F1 #j_43 class="ion-text-start">
+                <ion-icon _aio-444BD19C #j_44 name="star" size="large" color="success">
+                </ion-icon>
+                <ion-text _aio-3D15BC16 #j_45>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_45__text')" [ngIfElse]="j_45__default_text">
+                        {{__getMapping(currentItem, 'j_45__text', '', false)}}
+                    </ng-template>
+                    <ng-template #j_45__default_text>
+                        4,8
+                    </ng-template>
+                </ion-text>
+            </ion-col>
+            <ion-col _aio-C3361E55 #j_46 class="ion-text-center">
+                <ion-icon _aio-DA833BA0 #j_47 name="bonfire-outline" size="large" color="danger">
+                </ion-icon>
+                <ion-text _aio-4474038A #j_48>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_48__text')" [ngIfElse]="j_48__default_text">
+                        {{__getMapping(currentItem, 'j_48__text', '', false)}}
+                    </ng-template>
+                    <ng-template #j_48__default_text>
+                        150 Kcal
+                    </ng-template>
+                </ion-text>
+            </ion-col>
+            <ion-col _aio-65C29398 #j_49 class="ion-text-end">
+                <ion-icon _aio-4748BFD0 #j_50 name="alarm-outline" size="large">
+                </ion-icon>
+                <ion-text _aio-CCCB76C9 #j_51>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_51__text')" [ngIfElse]="j_51__default_text">
+                        {{__getMapping(currentItem, 'j_51__text', '', false)}}
+                    </ng-template>
+                    <ng-template #j_51__default_text>
+                        5-10 min
+                    </ng-template>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

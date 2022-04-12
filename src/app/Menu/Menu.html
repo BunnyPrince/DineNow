@@ -1,0 +1,47 @@
+<ion-header _aio-B8295F6E class="ion-no-border">
+    <ion-toolbar _aio-75004C87 #j_30 color="primary">
+        <ion-buttons #j_31 slot="start" collapse="true">
+            <ion-back-button _aio-4AC8C48F #j_32 (click)="buttonbackClick__j_32($event, currentItem)">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title _aio-6AAECC3E #j_33>
+            Menu
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-9D0C6BD8>
+    <ion-card _aio-4CEEAC07 #j_22 button="true" *ngFor="let currentItem of __getMapping(currentItem, 'j_22', []);"
+    (click)="cardClick__j_22($event, currentItem)">
+        <ion-card-content _aio-E66E9FFF #j_23>
+            <ion-card-title _aio-55F3B962 #j_24 class="ion-margin-bottom">
+                <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_24__text')" [ngIfElse]="j_24__default_text">
+                    {{__getMapping(currentItem, 'j_24__text', '', false)}}
+                </ng-template>
+                <ng-template #j_24__default_text>
+                    Burger
+                </ng-template>
+            </ion-card-title>
+            <ion-img _aio-B401783C #j_25 src="{{__getMapping(currentItem, 'j_25__imageSrc', 'assets/images/burger.jpg', false)}}"
+            alt="Image error" class="ion-margin-bottom">
+            </ion-img>
+            <ion-text _aio-CF0A6CD1 #j_26 class="ion-margin-top">
+                <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_26__text')" [ngIfElse]="j_26__default_text">
+                    {{__getMapping(currentItem, 'j_26__text', '', false)}}
+                </ng-template>
+                <ng-template #j_26__default_text>
+                    Close-up of home made tasty burger on wooden table
+                </ng-template>
+            </ion-text>
+        </ion-card-content>
+        <ion-card-content _aio-2BBE4EAD #j_27 class="ion-text-right">
+            <ion-badge _aio-C264376C #j_28 color="success">
+                <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_28__text')" [ngIfElse]="j_28__default_text">
+                    {{__getMapping(currentItem, 'j_28__text', '', false)}}
+                </ng-template>
+                <ng-template #j_28__default_text>
+                    $45.00
+                </ng-template>
+            </ion-badge>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
